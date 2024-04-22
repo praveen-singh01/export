@@ -11,6 +11,10 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
 
   <!-- Custom fonts for this template -->
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -29,7 +33,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img\RPA VENTURES  LLC logo (2) (2).png" height="300" width="250" ></a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img\RPA VENTURES  LLC logo (2) (2).png" height="130" width="180" ></a>
       <div><h4 style="color:#fed136;">RPA Ventures LLC</h4></div>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
@@ -66,37 +70,75 @@
   </header>
 
   <!-- Services -->
+  <style>
+    .card {
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .card::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .card:hover::after {
+      opacity: 1;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+  </style>
+  
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Services</h2>
+          <p class="section-subheading text-muted">RPA Ventures LLC specializes in exporting fresh fruits and vegetables from India. We ensure that your produce is handled with care and reaches its destination swiftly and safely.</p>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="row text-center">
+        <div class="col-md-4 animate__animated animate__bounceIn">
+          <div class="card shadow">
+            <img src="img\fresh.webp" class="card-img-top" alt="Service Image">
+            <div class="card-body">
+              <h4 class="card-title">Exporting Fresh Produce</h4>
+              <p class="card-text">We treat every shipment of fruits and vegetables as a highly individualized experience, ensuring swift and direct transport from your facility to its destination.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 animate__animated animate__bounceIn" style="animation-delay: 0.3s;">
+          <div class="card shadow">
+            <img src="img\import-export-.jpg" class="card-img-top" alt="Service Image">
+            <div class="card-body">
+              <h4 class="card-title">Exporting Worldwide</h4>
+              <p class="card-text">Our services extend beyond borders, allowing your produce to reach international markets efficiently and safely.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 animate__animated animate__bounceIn" style="animation-delay: 0.6s;">
+          <div class="card shadow">
+            <img src="img\5fb8cde56384a.jpeg" class="card-img-top" alt="Service Image">
+            <div class="card-body">
+              <h4 class="card-title">Efficient Logistics</h4>
+              <p class="card-text">We provide comprehensive logistics solutions to ensure that your fruits and vegetables are transported seamlessly worldwide.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 
- 
-<section id="services">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">Services</h2>
-        <p class="section-subheading text-muted">RPA Ventures LLC specializes in exporting fresh fruits and vegetables from India. We ensure that your produce is handled with care and reaches its destination swiftly and safely.</p>
-      </div>
-    </div>
-    <br>
-    <br>
-    <div class="row text-center">
-      <div class="col-md-4">
-        <img src="img\fresh.webp" height="100" width="250" alt="Service Image">
-        <h4 class="service-heading">Exporting Fresh Produce</h4>
-        <p class="text-muted">We treat every shipment of fruits and vegetables as a highly individualized experience, ensuring swift and direct transport from your facility to its destination.</p>
-      </div>
-      <div class="col-md-4">
-        <img src="img\import-export-.jpg"  height="100" width="250"  alt="Service Image">
-        <h4 class="service-heading">Exporting Worldwide</h4>
-        <p class="text-muted">Our services extend beyond borders, allowing your produce to reach international markets efficiently and safely.</p>
-      </div>
-      <div class="col-md-4">
-        <img src="img\5fb8cde56384a.jpeg" height="100" width="250" alt="Service Image">
-        <h4 class="service-heading">Efficient Logistics</h4>
-        <p class="text-muted">We provide comprehensive logistics solutions to ensure that your fruits and vegetables are transported seamlessly worldwide.</p>
-      </div>
-    </div>
-  </div>
-</section>
+  
 
   <!-- Portfolio Grid -->
   <!-- <section class="bg-light" id="portfolio">
@@ -110,59 +152,65 @@
     </div>
   </section> -->
 
- 
-
-  <!-- Team -->
-  <section class="bg-light" id="team">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Our products</h2>
-          <h3 class="section-subheading text-muted">Customer Happiness Is Our Top Priority. We Keep Our Customers Happy By Providing Best Services.</h3>
+<!-- Team -->
+<!-- Team -->
+<section class="bg-light" id="team">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Our products</h2>
+        <h3 class="section-subheading text-muted">Customer Happiness Is Our Top Priority. We Keep Our Customers Happy By Providing Best Services.</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card" style="border: 1px solid rgba(0, 0, 0, 0.125); border-radius: 0.25rem; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);">
+          <img class="card-img-top" src="img\Fresh-Vegetables.jpg" alt="Green Chillies">
+          <div class="card-body text-center">
+            <h4 class="card-title">Fresh Fruits</h4>
+            <p class="card-text text-muted">
+              We provide fresh and hygienic fruits and vegetables, rich in essential vitamins, minerals, and plant compounds that are beneficial for health.</p>
+          </div>
+          <div class="card-footer text-center" style="border-top: 1px solid #dee2e6; background-color: rgb(247, 247, 121);">
+            <small class="text-muted">Shop Now</small>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img\Green-Chillies.jpg" alt="Green Chillies">
-            <h4>Green Chillies</h4>
-            <p class="text-muted">Fresh Green Chillies directly from our farm</p>
-            <ul class="list-inline social-buttons">
-            </ul>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card" style="border: 1px solid rgba(0, 0, 0, 0.125); border-radius: 0.25rem; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);">
+          <img class="card-img-top" src="img\spices.webp" alt="Drum Sticks">
+          <div class="card-body text-center">
+            <h4 class="card-title">Spices</h4>
+            <p class="card-text text-muted">
+              Spices are derived from seeds, fruits, roots, barks, or other plant parts, and are mainly utilized for adding flavor or coloring to food. They are differentiated from herbs...</p>
+          </div>
+          <div class="card-footer text-center" style="border-top: 1px solid #dee2e6; background-color: rgb(67, 67, 67);">
+            <small class="text-muted">Shop Now</small>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img\Drum-Stick.jpeg" alt="Drum Sticks">
-            <h4>Drum Sticks</h4>
-            <p class="text-muted">
-              Drum Sticks freshly harvested from our farm</p>
-            <ul class="list-inline social-buttons">
-            </ul>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card" style="border: 1px solid rgba(0, 0, 0, 0.125); border-radius: 0.25rem; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);">
+          <img class="card-img-top" src="img\groceryproducts.jpg" alt="Onions">
+          <div class="card-body text-center">
+            <h4 class="card-title">Grocery Products</h4>
+            <p class="card-text text-muted">Our aim is to offer a wide range of grocery products to our valued customers, including lentils, flours, and pulses, according to their needs..</p>
           </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img\onions.jpg" alt="Onions">
-            <h4>Onions</h4>
-            <p class="text-muted">Get your hands on fresh, farm-harvested onions today.
-
-
-
-
-
-
-            </p>
-            <ul class="list-inline social-buttons">
-            </ul>
+          <div class="card-footer text-center" style="border-top: 1px solid #dee2e6; background-color: rgb(2, 21, 84);">
+            <small class="text-muted">Shop Now</small>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  
+  </div>
+</section>
 
-  <!-- Contact -->
+
+
+
+
+  </section>
+
   <!-- Contact -->
   <section id="contact">
     <div class="container">
@@ -209,20 +257,62 @@
       </div>
     </div>
   </section>
-   <!-- About -->
-   <section id="about">
+
+  <style>
+    #about {
+      background-color: #f8f9fa; /* Light grey background color */
+      padding: 80px 0; /* Padding for the content */
+    }
+  
+    #about .section-heading {
+      color: #333333; /* Dark grey heading color */
+      text-transform: uppercase; /* Uppercase text */
+      font-size: 28px; /* Larger font size for the heading */
+      margin-bottom: 30px; /* Spacing below the heading */
+    }
+  
+    #about .section-subheading {
+      font-size: 16px; /* Font size for the subheading */
+      margin-bottom: 50px; /* Spacing below the subheading */
+      color: #555555; /* Darker grey text color */
+    }
+  
+    #about .contact-info {
+      font-size: 18px; /* Font size for the contact information */
+      color: #555555; /* Darker grey text color */
+    }
+  
+    #about ul.quicklinks {
+      list-style: none; /* Remove default list styling */
+      padding: 0; /* Remove default list padding */
+      margin-top: 40px; /* Spacing above the copyright */
+    }
+  
+    #about ul.quicklinks li {
+      color: #555555; /* Darker grey text color */
+      font-size: 14px; /* Font size for the copyright text */
+    }
+  
+    #about ul.quicklinks li::before {
+      content: "\\"; /* Bullet character */
+      margin-right: 8px; /* Spacing between bullet and text */
+      color: #555555; /* Darker grey color */
+    }
+  </style>
+  
+  <section id="about">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">About</h2>
-          <h3 class="section-subheading text-muted">We are a young team of professionals engaged in the field of end to end courier & logistics solutions.</h3>
-          <p>Exporting fresh fruits and vegetables from India.<br> Sharda Garden,New Panvel,Mumbai 401206<br> Ph.: 9403012499, 8286008661<br> E-mail: praveenkumar1090@gmail.com</p>
+          <h2 class="section-heading">About</h2>
+          <h3 class="section-subheading">We are a young team of professionals engaged in the field of end to end courier & logistics solutions.</h3>
+          <p class="contact-info">Exporting fresh fruits and vegetables from India.<br> Sharda Garden, New Panvel, Mumbai 401206<br> Ph.: 9403012499, 8286008661<br> E-mail: praveenkumar1090@gmail.com</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12 text-center">
-          <ul class="list-inline quicklinks">
-            <li class="list-inline-item">Copyright &copy; RPA Ventures LLC 2023</li>
+          <ul class="quicklinks">
+            <li>Copyright &copy; RPA Ventures LLC 2024</li>
           </ul>
         </div>
       </div>
@@ -230,7 +320,6 @@
   </section>
   
   
-
 
   <!-- Footer -->
   <!-- <footer>
